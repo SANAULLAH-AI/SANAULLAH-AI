@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="76" viewBox="0 0 1200 76">
+<defs><linearGradient id="l"><stop stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#A0E9FF" stop-opacity=".65"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<path d="M40 15H1160" stroke="url(#l)" stroke-width="1"/>
+<text x="600" y="43" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="10.5" letter-spacing="2.2" fill="#8299A6">SANAULLAH-AI · RESEARCH &amp; DEVELOPMENT PORTFOLIO · ISLAMABAD, PAKISTAN</text>
+<path d="M280 60H920" stroke="url(#l)" stroke-width="1"/>
+</svg>

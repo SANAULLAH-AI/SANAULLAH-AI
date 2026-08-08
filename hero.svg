@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="255" viewBox="0 0 1200 255">
+<defs>
+ <linearGradient id="b" x2="1" y2="1"><stop stop-color="#071522"/><stop offset=".5" stop-color="#102A40"/><stop offset="1" stop-color="#071522"/></linearGradient>
+ <linearGradient id="g"><stop stop-color="#fff"/><stop offset=".32" stop-color="#A0E9FF"/><stop offset=".66" stop-color="#FFE082"/><stop offset=".84" stop-color="#FFCDD2"/><stop offset="1" stop-color="#fff"/></linearGradient>
+ <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".18"/><stop offset=".5" stop-color="#B3E5FC" stop-opacity=".055"/><stop offset="1" stop-color="#fff" stop-opacity=".12"/></linearGradient>
+ <filter id="gl"><feGaussianBlur stdDeviation="5" result="x"/><feMerge><feMergeNode in="x"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="bl"><feGaussianBlur stdDeviation="18"/></filter>
+ <clipPath id="c"><rect width="1200" height="255" rx="30"/></clipPath>
+</defs>
+<rect width="1200" height="255" rx="30" fill="url(#b)"/>
+<g clip-path="url(#c)">
+ <ellipse cx="600" cy="135" rx="460" ry="175" fill="#B3E5FC" opacity=".06" filter="url(#bl)"/>
+ <path d="M-350 245L420-80" stroke="#B3E5FC" stroke-width="34" opacity=".11" filter="url(#bl)">
+  <animateTransform attributeName="transform" type="translate" from="-200 0" to="1400 0" dur="9s" repeatCount="indefinite"/>
+ </path>
+ <path d="M-450 255L500-90" stroke="#FFE082" stroke-width="12" opacity=".09" filter="url(#bl)">
+  <animateTransform attributeName="transform" type="translate" from="-500 0" to="1500 0" dur="12s" repeatCount="indefinite"/>
+ </path>
+</g>
+<!-- restrained crystal frame -->
+<path d="M238 226V113C238 53 300 29 365 29H835C900 29 962 53 962 113V226"
+ fill="url(#glass)" stroke="#fff" stroke-opacity=".22" stroke-width="16" filter="url(#gl)"/>
+<path d="M238 226V113C238 53 300 29 365 29H835C900 29 962 53 962 113V226"
+ fill="none" stroke="url(#g)" stroke-width="2.4"/>
+<path d="M257 226V120C257 76 307 51 371 51H829C893 51 943 76 943 120V226"
+ fill="none" stroke="#fff" stroke-opacity=".20"/>
+<circle cx="311" cy="72" r="2.3" fill="#FFF8DC"><animate attributeName="opacity" values=".1;1;.1" dur="2.2s" repeatCount="indefinite"/></circle>
+<circle cx="886" cy="88" r="2.8" fill="#FFF8DC"><animate attributeName="opacity" values="1;.1;1" dur="2.8s" repeatCount="indefinite"/></circle>
+<text x="600" y="116" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="48" font-weight="700" letter-spacing="8" fill="#fff">SANAULLAH</text>
+<text x="600" y="148" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15.5" font-weight="600" letter-spacing="3.2" fill="#A0E9FF">AI/ML RESEARCHER · NLP &amp; COMPUTER VISION · BSCS</text>
+<text x="600" y="179" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11.5" letter-spacing="2" fill="#D1E2EA">ARCHITECTING DECENTRALIZED INTELLIGENCE SYSTEMS &amp; HIGH-PERFORMANCE DEEP LEARNING FRAMEWORKS</text>
+</svg>
