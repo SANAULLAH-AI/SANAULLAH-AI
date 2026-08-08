@@ -1,86 +1,119 @@
 <div align="center">
 
-<img src="./hero.svg" width="100%" alt="SANAULLAH">
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- NEON TYPING HEADER                                          -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
 
-<br>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=42&duration=2800&pause=600&color=00F0FF&center=true&vCenter=true&width=700&lines=SANAULLAH;AI%2FML+Researcher;NLP+%26+Computer+Vision;Decentralized+AI+Systems" alt="Typing SVG" />
 
-<p>
-  <b>AI/ML Researcher</b> &nbsp;|&nbsp;
-  <b>NLP &amp; Computer Vision</b> &nbsp;|&nbsp;
-  <b>BSCS @ Abasyn University</b>
   <br>
-  <i>Architecting Decentralized Intelligence Systems &amp; High-Performance Deep Learning Frameworks</i>
-</p>
 
-<table width="100%">
-<tr>
-<td align="center">
+  <p align="center">
+    <i>Architecting Decentralized Intelligence, LLM Pipelines & Computer Vision Models</i>
+  </p>
 
-<a href="https://www.linkedin.com/in/sanaullah-ai"><b>LINKEDIN</b></a>
-&nbsp;•&nbsp;
-<a href="https://sanaullah-portfolio.onrender.com/"><b>PORTFOLIO 1</b></a>
-&nbsp;•&nbsp;
-<a href="https://sanaullah7964.netlify.app"><b>PORTFOLIO 2</b></a>
-&nbsp;•&nbsp;
-<a href="https://huggingface.co/sanaullah7964"><b>HUGGING FACE</b></a>
-&nbsp;•&nbsp;
-<a href="https://www.kaggle.com/sanaullah03041417973"><b>KAGGLE</b></a>
-&nbsp;•&nbsp;
-<a href="mailto:sanaullah786shah92@gmail.com"><b>EMAIL</b></a>
+  <br>
 
-</td>
-</tr>
-</table>
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- NAVIGATION & METRICS                                        -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
 
-<br>
+  <a href="https://www.linkedin.com/in/sanaullah-ai">
+    <img src="https://img.shields.io/badge/LINKEDIN-0B3B5A?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  &nbsp;
+  <a href="https://sanaullah-portfolio.onrender.com/">
+    <img src="https://img.shields.io/badge/PORTFOLIO-00F0FF?style=for-the-badge&logo=googlechrome&logoColor=0B3B5A" alt="Portfolio">
+  </a>
+  &nbsp;
+  <a href="https://huggingface.co/sanaullah7964">
+    <img src="https://img.shields.io/badge/HUGGING_FACE-FFE082?style=for-the-badge&logo=huggingface&logoColor=111111" alt="Hugging Face">
+  </a>
+  &nbsp;
+  <a href="https://www.kaggle.com/sanaullah03041417973">
+    <img src="https://img.shields.io/badge/KAGGLE-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle">
+  </a>
+  &nbsp;
+  <a href="mailto:sanaullah786shah92@gmail.com">
+    <img src="https://img.shields.io/badge/EMAIL-FFCDD2?style=for-the-badge&logo=gmail&logoColor=7A263A" alt="Email">
+  </a>
 
-<table width="100%">
-<tr>
-<td align="left">
+  <br><br>
 
-### TECHNICAL ECOSYSTEM
+  <img src="https://img.shields.io/badge/Location-Islamabad-0B3B5A?style=flat-square" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Degree-BSCS_@_Abasyn_University-0B3B5A?style=flat-square" />
+  &nbsp;
+  <img src="https://komarev.com/ghpvc/?username=SANAULLAH-AI&style=flat-square&color=0B3B5A" alt="Profile Views" />
 
-**Artificial Intelligence &amp; Frameworks**
+  <br><br>
 
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white">
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white">
-<img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white">
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+  ---
 
-<br><br>
+  <br>
 
-**Data Analytics &amp; Scientific Computing**
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- TECHNICAL ECOSYSTEM (BORDERLESS GLASS GRID)                 -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
 
-<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white">
-<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white">
-<img src="https://img.shields.io/badge/Matplotlib-11557c?style=flat-square">
+  <h3>TECHNICAL ECOSYSTEM</h3>
 
-<br><br>
+  <br>
 
-**Web Engineering &amp; Systems**
+  <table width="100%" style="border-collapse: collapse; border: none;">
+    <tr>
+      <td width="50%" align="left" valign="top" style="padding: 16px; border: none;">
+        <span style="color: #00F0FF; font-weight: 600; letter-spacing: 0.5px;">AI / MACHINE LEARNING & RESEARCH</span>
+        <br><br>
+        <code>PyTorch</code> <code>TensorFlow</code> <code>Scikit-learn</code>
+        <br><br>
+        <code>NLP</code> <code>Computer Vision</code> <code>LLMs</code>
+      </td>
+      <td width="50%" align="left" valign="top" style="padding: 16px; border: none;">
+        <span style="color: #00F0FF; font-weight: 600; letter-spacing: 0.5px;">LANGUAGES & DATA COMPUTATION</span>
+        <br><br>
+        <code>Python</code> <code>NumPy</code> <code>Pandas</code> <code>Matplotlib</code>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="left" valign="top" style="padding: 16px; border: none;">
+        <span style="color: #00F0FF; font-weight: 600; letter-spacing: 0.5px;">WEB & SYSTEMS ENGINEERING</span>
+        <br><br>
+        <code>Next.js</code> <code>React</code> <code>Node.js</code> <code>MongoDB</code>
+      </td>
+      <td width="50%" align="left" valign="top" style="padding: 16px; border: none;">
+        <span style="color: #00F0FF; font-weight: 600; letter-spacing: 0.5px;">INFRASTRUCTURE & MLOPS TOOLS</span>
+        <br><br>
+        <code>Docker</code> <code>Git</code> <code>GitHub</code> <code>Google Colab</code> <code>Kaggle</code> <code>VS Code</code>
+      </td>
+    </tr>
+  </table>
 
-<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black">
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white">
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white">
+  <br>
 
-<br><br>
+  ---
 
-**Infrastructure &amp; Research Tools**
+  <br>
 
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white">
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white">
-<img src="https://img.shields.io/badge/Google_Colab-F9AB00?style=flat-square&logo=googlecolab&logoColor=white">
-<img src="https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white">
-<img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white">
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- REPOSITORIES & WORKSPACE                                    -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
 
-</td>
-</tr>
-</table>
+  <h3>ACTIVE REPOSITORIES</h3>
 
-<br>
+  <br>
 
-<img src="./footer.svg" width="100%" alt="SANAULLAH footer">
+  <img src="https://img.shields.io/badge/Lightningclean-071522?style=flat-square&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Expense--Tracker-071522?style=flat-square&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/MobileAppDev-071522?style=flat-square&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/DevCheatSheets-071522?style=flat-square&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/My--Workstation-071522?style=flat-square&logo=github&logoColor=white" />
+
+  <br><br><br>
+
+  <!-- FOOTER -->
+  <p style="font-size: 12px; color: #888;">
+    <b>@SANAULLAH-AI</b> &nbsp;•&nbsp; AI/ML Researcher &nbsp;•&nbsp; Islamabad, Pakistan
+  </p>
 
 </div>
