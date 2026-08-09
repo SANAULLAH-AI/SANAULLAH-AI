@@ -56,7 +56,7 @@
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
-<!-- TECHNICAL ECOSYSTEM - ANIMATED SVG CARDS                   -->
+<!-- TECHNICAL ECOSYSTEM                                        -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
 <h3>⚡ TECHNICAL ECOSYSTEM</h3>
@@ -66,7 +66,7 @@
 <!-- ─── CARD 1: AI/ML ─── -->
 <details open>
 <summary style="font-size: 18px; font-weight: 600; color: #58a6ff; cursor: pointer; list-style: none;">
-  🤖 AI / MACHINE LEARNING
+  ◆ AI / MACHINE LEARNING
 </summary>
 <br>
 <p align="center">
@@ -83,7 +83,7 @@
 <!-- ─── CARD 2: LANGUAGES ─── -->
 <details open>
 <summary style="font-size: 18px; font-weight: 600; color: #58a6ff; cursor: pointer; list-style: none;">
-  📊 LANGUAGES & DATA
+  ◈ LANGUAGES & DATA
 </summary>
 <br>
 <p align="center">
@@ -98,7 +98,7 @@
 <!-- ─── CARD 3: WEB ─── -->
 <details open>
 <summary style="font-size: 18px; font-weight: 600; color: #58a6ff; cursor: pointer; list-style: none;">
-  🌐 WEB & SYSTEMS
+  ◇ WEB & SYSTEMS
 </summary>
 <br>
 <p align="center">
@@ -113,7 +113,7 @@
 <!-- ─── CARD 4: MLOPS ─── -->
 <details open>
 <summary style="font-size: 18px; font-weight: 600; color: #58a6ff; cursor: pointer; list-style: none;">
-  ⚙️ MLOPS & INFRASTRUCTURE
+  ◉ MLOPS & INFRASTRUCTURE
 </summary>
 <br>
 <p align="center">
@@ -129,7 +129,7 @@
 
 <br>
 
-<!-- ─── ANIMATED DIVIDER ─── -->
+<!-- ─── DIVIDER ─── -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
 
 <br>
@@ -138,7 +138,7 @@
 <!-- REPOSITORIES                                               -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
-<h3>📦 ACTIVE REPOSITORIES</h3>
+<h3>◆ ACTIVE REPOSITORIES</h3>
 
 <br>
 
