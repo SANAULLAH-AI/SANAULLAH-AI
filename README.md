@@ -1,23 +1,29 @@
 <div align="center">
 
 <!-- ═══════════════════════════════════════════════════════════ -->
-<!-- HEADER                                                      -->
+<!-- HEADER WITH 3D ANIMATED BACKGROUND                        -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
+<div style="position: relative; width: 100%; padding: 40px 20px; background: #0d1117; border-radius: 20px; margin-bottom: 20px; overflow: hidden; min-height: 400px;">
+
+<!-- 3D Animated Background SVG (Portrait) -->
+<img src="background.svg" width="100%" height="100%" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.3; object-fit: cover;" />
+
+<!-- ─── CONTENT OVERLAY ─── -->
+<div style="position: relative; z-index: 1;">
+
+<!-- TYPING HEADER -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=42&duration=2800&pause=600&color=00F0FF&center=true&vCenter=true&width=700&lines=SANAULLAH;AI%2FML+Researcher;NLP+%26+Computer+Vision;Decentralized+AI+Systems" alt="Typing SVG" />
 
 <br>
 
-<p align="center">
+<p align="center" style="color: #e6edf3; font-size: 16px; font-family: -apple-system, sans-serif;">
   <i>Architecting Decentralized Intelligence, LLM Pipelines & Computer Vision Models</i>
 </p>
 
 <br>
 
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!-- SOCIAL LINKS                                               -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-
+<!-- SOCIAL LINKS -->
 <a href="https://www.linkedin.com/in/sanaullah-ai">
   <img src="https://img.shields.io/badge/LINKEDIN-0B3B5A?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
@@ -46,11 +52,8 @@
 &nbsp;
 <img src="https://komarev.com/ghpvc/?username=SANAULLAH-AI&style=flat-square&color=0B3B5A" alt="Profile Views" />
 
-<br><br>
-
----
-
-<br>
+</div>
+</div>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- TECHNICAL ECOSYSTEM - ANIMATED SVG CARDS                   -->
