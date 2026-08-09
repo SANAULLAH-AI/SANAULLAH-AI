@@ -1,0 +1,143 @@
+<svg width="800" height="400" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="shadow3d">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f8cf7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#6c5ce7" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00b894" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00cec9" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fd79a8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#fab1a0" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a29bfe" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#6c5ce7" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdcb6e" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#f39c12" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ─── FLOATING PARTICLES ─── -->
+  <g filter="url(#glow)">
+    <circle cx="80" cy="80" r="2.5" fill="#4f8cf7" opacity="0.5">
+      <animate attributeName="cy" values="80;50;110;80" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="80;110;50;80" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="200" r="2" fill="#00b894" opacity="0.4">
+      <animate attributeName="cy" values="200;170;230;200" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="200;230;170;200" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="120" r="3" fill="#fd79a8" opacity="0.4">
+      <animate attributeName="cy" values="120;90;150;120" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="350;380;320;350" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="280" r="2" fill="#a29bfe" opacity="0.45">
+      <animate attributeName="cy" values="280;250;310;280" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="500;530;470;500" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="650" cy="160" r="2.5" fill="#fdcb6e" opacity="0.4">
+      <animate attributeName="cy" values="160;130;190;160" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="650;680;620;650" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="720" cy="320" r="2" fill="#4f8cf7" opacity="0.5">
+      <animate attributeName="cy" values="320;290;350;320" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="720;750;690;720" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="340" r="2" fill="#00cec9" opacity="0.4">
+      <animate attributeName="cy" values="340;310;370;340" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="50" r="2.5" fill="#fab1a0" opacity="0.45">
+      <animate attributeName="cy" values="50;20;80;50" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="350" r="2" fill="#6c5ce7" opacity="0.4">
+      <animate attributeName="cy" values="350;320;380;350" dur="7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ─── ROTATING 3D CUBES ─── -->
+  <g transform="translate(150, 180)" filter="url(#shadow3d)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="25s" repeatCount="indefinite"/>
+      <polygon points="0,-40 35,-20 35,20 0,40" fill="url(#grad1)" stroke="#4f8cf7" stroke-width="1.5"/>
+      <polygon points="35,-20 70,0 70,40 35,20" fill="url(#grad2)" stroke="#00b894" stroke-width="1.5"/>
+      <polygon points="0,-40 35,-20 70,0 35,-20" fill="url(#grad3)" stroke="#fd79a8" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <g transform="translate(400, 210)" filter="url(#shadow3d)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="360;0" dur="30s" repeatCount="indefinite"/>
+      <polygon points="0,-30 26,-15 26,15 0,30" fill="url(#grad2)" stroke="#00b894" stroke-width="1.5"/>
+      <polygon points="26,-15 52,0 52,30 26,15" fill="url(#grad3)" stroke="#fd79a8" stroke-width="1.5"/>
+      <polygon points="0,-30 26,-15 52,0 26,-15" fill="url(#grad4)" stroke="#a29bfe" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <g transform="translate(650, 160)" filter="url(#shadow3d)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="20s" repeatCount="indefinite"/>
+      <polygon points="0,-22 19,-11 19,11 0,22" fill="url(#grad3)" stroke="#fd79a8" stroke-width="1.5"/>
+      <polygon points="19,-11 38,0 38,22 19,11" fill="url(#grad4)" stroke="#a29bfe" stroke-width="1.5"/>
+      <polygon points="0,-22 19,-11 38,0 19,-11" fill="url(#grad1)" stroke="#4f8cf7" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <g transform="translate(550, 320)" filter="url(#shadow3d)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="360;0" dur="22s" repeatCount="indefinite"/>
+      <polygon points="0,-18 16,-9 16,9 0,18" fill="url(#grad4)" stroke="#a29bfe" stroke-width="1.5"/>
+      <polygon points="16,-9 32,0 32,18 16,9" fill="url(#grad1)" stroke="#4f8cf7" stroke-width="1.5"/>
+      <polygon points="0,-18 16,-9 32,0 16,-9" fill="url(#grad2)" stroke="#00b894" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- ─── SPINNING GEOMETRIC SHAPES ─── -->
+  <g transform="translate(280, 150)" filter="url(#glow)">
+    <polygon points="0,-22 19,-11 19,11 0,22 -19,11 -19,-11" fill="none" stroke="#4f8cf7" stroke-width="1.5" opacity="0.35">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="15s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <g transform="translate(550, 100)" filter="url(#glow)">
+    <polygon points="0,-18 16,9 -16,9" fill="none" stroke="#00b894" stroke-width="1.5" opacity="0.3">
+      <animateTransform attributeName="transform" type="rotate" values="360;0" dur="12s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <g transform="translate(350, 330)" filter="url(#glow)">
+    <polygon points="0,-14 12,0 0,14 -12,0" fill="none" stroke="#fd79a8" stroke-width="1.5" opacity="0.3">
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="18s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <!-- ─── PULSING RINGS ─── -->
+  <circle cx="250" cy="260" r="25" fill="none" stroke="#4f8cf7" stroke-width="1.5" opacity="0.15">
+    <animate attributeName="r" values="25;55;25" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0;0.15" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="150" r="30" fill="none" stroke="#00b894" stroke-width="1.5" opacity="0.15">
+    <animate attributeName="r" values="30;65;30" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0;0.15" dur="7s" repeatCount="indefinite"/>
+  </circle>
+</svg>
