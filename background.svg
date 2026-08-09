@@ -1,143 +1,148 @@
-<svg width="800" height="400" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800" width="100%" height="100%">
   <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    
-    <filter id="shadow3d">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.15"/>
+    <!-- Premium Soft Shadows -->
+    <filter id="premShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#4A5568" flood-opacity="0.06"/>
     </filter>
 
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4f8cf7" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#6c5ce7" stop-opacity="0.1"/>
+    <!-- Soft Glow -->
+    <filter id="premGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+    </filter>
+
+    <!-- Premium Crystal Gradients -->
+    <linearGradient id="crystal1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F8CF7" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.04"/>
     </linearGradient>
 
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00b894" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#00cec9" stop-opacity="0.1"/>
+    <linearGradient id="crystal2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00B894" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4F8CF7" stop-opacity="0.04"/>
     </linearGradient>
 
-    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fd79a8" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#fab1a0" stop-opacity="0.1"/>
-    </linearGradient>
-
-    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#a29bfe" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#6c5ce7" stop-opacity="0.1"/>
-    </linearGradient>
-
-    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fdcb6e" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#f39c12" stop-opacity="0.1"/>
+    <linearGradient id="crystal3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FD79A8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FDCB6E" stop-opacity="0.04"/>
     </linearGradient>
   </defs>
 
+  <!-- Soft Ambient Light Base -->
+  <rect width="400" height="800" fill="#F8FAFC" opacity="0"/>
+
+  <!-- Glowing Orbs -->
+  <circle cx="320" cy="200" r="180" fill="url(#crystal1)" filter="url(#premGlow)"/>
+  <circle cx="80" cy="600" r="200" fill="url(#crystal2)" filter="url(#premGlow)"/>
+  <circle cx="200" cy="400" r="150" fill="url(#crystal3)" filter="url(#premGlow)"/>
+
+  <!-- ─── 3D CRYSTAL STRUCTURES ─── -->
+  <g filter="url(#premShadow)">
+    <!-- Top Right Crystal -->
+    <polygon points="400,0 220,0 320,200 400,120" fill="url(#crystal2)"/>
+    <polygon points="220,0 170,80 320,200" fill="url(#crystal3)"/>
+    
+    <!-- Center Crystal Flow -->
+    <polygon points="40,560 170,400 240,600 75,650" fill="url(#crystal1)"/>
+    <polygon points="170,400 320,500 240,600" fill="url(#crystal3)"/>
+
+    <!-- Bottom Left Crystal -->
+    <polygon points="0,700 100,500 150,750 0,800" fill="url(#crystal2)"/>
+    
+    <!-- Top Left Crystal -->
+    <polygon points="0,0 120,0 80,180 0,150" fill="url(#crystal1)"/>
+  </g>
+
   <!-- ─── FLOATING PARTICLES ─── -->
-  <g filter="url(#glow)">
-    <circle cx="80" cy="80" r="2.5" fill="#4f8cf7" opacity="0.5">
-      <animate attributeName="cy" values="80;50;110;80" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="80;110;50;80" dur="8s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="200" cy="200" r="2" fill="#00b894" opacity="0.4">
-      <animate attributeName="cy" values="200;170;230;200" dur="7s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="200;230;170;200" dur="9s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="350" cy="120" r="3" fill="#fd79a8" opacity="0.4">
-      <animate attributeName="cy" values="120;90;150;120" dur="5s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="350;380;320;350" dur="7s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="500" cy="280" r="2" fill="#a29bfe" opacity="0.45">
-      <animate attributeName="cy" values="280;250;310;280" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="500;530;470;500" dur="10s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="650" cy="160" r="2.5" fill="#fdcb6e" opacity="0.4">
+  <g>
+    <circle cx="60" cy="160" r="3" fill="#4F8CF7" opacity="0.3">
       <animate attributeName="cy" values="160;130;190;160" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="650;680;620;650" dur="8s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="720" cy="320" r="2" fill="#4f8cf7" opacity="0.5">
-      <animate attributeName="cy" values="320;290;350;320" dur="7s" repeatCount="indefinite"/>
-      <animate attributeName="cx" values="720;750;690;720" dur="9s" repeatCount="indefinite"/>
+    <circle cx="150" cy="300" r="2" fill="#00B894" opacity="0.25">
+      <animate attributeName="cy" values="300;270;330;300" dur="7s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="150" cy="340" r="2" fill="#00cec9" opacity="0.4">
-      <animate attributeName="cy" values="340;310;370;340" dur="8s" repeatCount="indefinite"/>
+    <circle cx="250" cy="120" r="3" fill="#FD79A8" opacity="0.2">
+      <animate attributeName="cy" values="120;90;150;120" dur="5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="450" cy="50" r="2.5" fill="#fab1a0" opacity="0.45">
-      <animate attributeName="cy" values="50;20;80;50" dur="6s" repeatCount="indefinite"/>
+    <circle cx="340" cy="400" r="2.5" fill="#7C3AED" opacity="0.25">
+      <animate attributeName="cy" values="400;370;430;400" dur="8s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="300" cy="350" r="2" fill="#6c5ce7" opacity="0.4">
-      <animate attributeName="cy" values="350;320;380;350" dur="7s" repeatCount="indefinite"/>
+    <circle cx="100" cy="700" r="2" fill="#FDCB6E" opacity="0.2">
+      <animate attributeName="cy" values="700;670;730;700" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="650" r="2.5" fill="#4F8CF7" opacity="0.2">
+      <animate attributeName="cy" values="650;620;680;650" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="700" r="2" fill="#00B894" opacity="0.2">
+      <animate attributeName="cy" values="700;670;730;700" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="250" r="2" fill="#FD79A8" opacity="0.2">
+      <animate attributeName="cy" values="250;220;280;250" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="50" cy="450" r="2.5" fill="#7C3AED" opacity="0.2">
+      <animate attributeName="cy" values="450;420;480;450" dur="7s" repeatCount="indefinite"/>
     </circle>
   </g>
 
-  <!-- ─── ROTATING 3D CUBES ─── -->
-  <g transform="translate(150, 180)" filter="url(#shadow3d)">
+  <!-- ─── ROTATING CRYSTAL CUBES ─── -->
+  <g transform="translate(100, 440)" filter="url(#premShadow)">
     <g>
       <animateTransform attributeName="transform" type="rotate" values="0;360" dur="25s" repeatCount="indefinite"/>
-      <polygon points="0,-40 35,-20 35,20 0,40" fill="url(#grad1)" stroke="#4f8cf7" stroke-width="1.5"/>
-      <polygon points="35,-20 70,0 70,40 35,20" fill="url(#grad2)" stroke="#00b894" stroke-width="1.5"/>
-      <polygon points="0,-40 35,-20 70,0 35,-20" fill="url(#grad3)" stroke="#fd79a8" stroke-width="1.5"/>
+      <polygon points="0,-30 26,-15 26,15 0,30" fill="url(#crystal1)" stroke="#4F8CF7" stroke-width="1" opacity="0.6"/>
+      <polygon points="26,-15 52,0 52,30 26,15" fill="url(#crystal2)" stroke="#00B894" stroke-width="1" opacity="0.4"/>
+      <polygon points="0,-30 26,-15 52,0 26,-15" fill="url(#crystal3)" stroke="#FD79A8" stroke-width="1" opacity="0.3"/>
     </g>
   </g>
 
-  <g transform="translate(400, 210)" filter="url(#shadow3d)">
+  <g transform="translate(300, 560)" filter="url(#premShadow)">
     <g>
       <animateTransform attributeName="transform" type="rotate" values="360;0" dur="30s" repeatCount="indefinite"/>
-      <polygon points="0,-30 26,-15 26,15 0,30" fill="url(#grad2)" stroke="#00b894" stroke-width="1.5"/>
-      <polygon points="26,-15 52,0 52,30 26,15" fill="url(#grad3)" stroke="#fd79a8" stroke-width="1.5"/>
-      <polygon points="0,-30 26,-15 52,0 26,-15" fill="url(#grad4)" stroke="#a29bfe" stroke-width="1.5"/>
+      <polygon points="0,-22 19,-11 19,11 0,22" fill="url(#crystal2)" stroke="#00B894" stroke-width="1" opacity="0.5"/>
+      <polygon points="19,-11 38,0 38,22 19,11" fill="url(#crystal3)" stroke="#FD79A8" stroke-width="1" opacity="0.3"/>
+      <polygon points="0,-22 19,-11 38,0 19,-11" fill="url(#crystal1)" stroke="#4F8CF7" stroke-width="1" opacity="0.3"/>
     </g>
   </g>
 
-  <g transform="translate(650, 160)" filter="url(#shadow3d)">
+  <g transform="translate(200, 200)" filter="url(#premShadow)">
     <g>
       <animateTransform attributeName="transform" type="rotate" values="0;360" dur="20s" repeatCount="indefinite"/>
-      <polygon points="0,-22 19,-11 19,11 0,22" fill="url(#grad3)" stroke="#fd79a8" stroke-width="1.5"/>
-      <polygon points="19,-11 38,0 38,22 19,11" fill="url(#grad4)" stroke="#a29bfe" stroke-width="1.5"/>
-      <polygon points="0,-22 19,-11 38,0 19,-11" fill="url(#grad1)" stroke="#4f8cf7" stroke-width="1.5"/>
-    </g>
-  </g>
-
-  <g transform="translate(550, 320)" filter="url(#shadow3d)">
-    <g>
-      <animateTransform attributeName="transform" type="rotate" values="360;0" dur="22s" repeatCount="indefinite"/>
-      <polygon points="0,-18 16,-9 16,9 0,18" fill="url(#grad4)" stroke="#a29bfe" stroke-width="1.5"/>
-      <polygon points="16,-9 32,0 32,18 16,9" fill="url(#grad1)" stroke="#4f8cf7" stroke-width="1.5"/>
-      <polygon points="0,-18 16,-9 32,0 16,-9" fill="url(#grad2)" stroke="#00b894" stroke-width="1.5"/>
+      <polygon points="0,-18 16,-9 16,9 0,18" fill="url(#crystal3)" stroke="#FD79A8" stroke-width="1" opacity="0.4"/>
+      <polygon points="16,-9 32,0 32,18 16,9" fill="url(#crystal1)" stroke="#4F8CF7" stroke-width="1" opacity="0.3"/>
+      <polygon points="0,-18 16,-9 32,0 16,-9" fill="url(#crystal2)" stroke="#00B894" stroke-width="1" opacity="0.3"/>
     </g>
   </g>
 
   <!-- ─── SPINNING GEOMETRIC SHAPES ─── -->
-  <g transform="translate(280, 150)" filter="url(#glow)">
-    <polygon points="0,-22 19,-11 19,11 0,22 -19,11 -19,-11" fill="none" stroke="#4f8cf7" stroke-width="1.5" opacity="0.35">
+  <g transform="translate(140, 300)" filter="url(#premGlow)">
+    <polygon points="0,-16 14,8 -14,8" fill="none" stroke="#4F8CF7" stroke-width="1.5" opacity="0.2">
       <animateTransform attributeName="transform" type="rotate" values="0;360" dur="15s" repeatCount="indefinite"/>
     </polygon>
   </g>
 
-  <g transform="translate(550, 100)" filter="url(#glow)">
-    <polygon points="0,-18 16,9 -16,9" fill="none" stroke="#00b894" stroke-width="1.5" opacity="0.3">
+  <g transform="translate(280, 320)" filter="url(#premGlow)">
+    <polygon points="0,-12 10,6 -10,6" fill="none" stroke="#00B894" stroke-width="1.5" opacity="0.2">
       <animateTransform attributeName="transform" type="rotate" values="360;0" dur="12s" repeatCount="indefinite"/>
     </polygon>
   </g>
 
-  <g transform="translate(350, 330)" filter="url(#glow)">
-    <polygon points="0,-14 12,0 0,14 -12,0" fill="none" stroke="#fd79a8" stroke-width="1.5" opacity="0.3">
-      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="18s" repeatCount="indefinite"/>
-    </polygon>
-  </g>
-
   <!-- ─── PULSING RINGS ─── -->
-  <circle cx="250" cy="260" r="25" fill="none" stroke="#4f8cf7" stroke-width="1.5" opacity="0.15">
-    <animate attributeName="r" values="25;55;25" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.15;0;0.15" dur="6s" repeatCount="indefinite"/>
+  <circle cx="200" cy="300" r="40" fill="none" stroke="#4F8CF7" stroke-width="1" opacity="0.08">
+    <animate attributeName="r" values="40;80;40" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.08;0;0.08" dur="6s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="500" cy="150" r="30" fill="none" stroke="#00b894" stroke-width="1.5" opacity="0.15">
-    <animate attributeName="r" values="30;65;30" dur="7s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.15;0;0.15" dur="7s" repeatCount="indefinite"/>
+
+  <circle cx="120" cy="600" r="30" fill="none" stroke="#00B894" stroke-width="1" opacity="0.08">
+    <animate attributeName="r" values="30;70;30" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.08;0;0.08" dur="7s" repeatCount="indefinite"/>
   </circle>
+
+  <circle cx="300" cy="150" r="25" fill="none" stroke="#FD79A8" stroke-width="1" opacity="0.08">
+    <animate attributeName="r" values="25;60;25" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.08;0;0.08" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ─── SUBTLE BORDER ─── -->
+  <rect x="2" y="2" width="396" height="796" rx="16" fill="none" stroke="#4F8CF7" stroke-width="1" opacity="0.06">
+    <animate attributeName="opacity" values="0.06;0.15;0.06" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
 </svg>
